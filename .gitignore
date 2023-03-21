@@ -1,3 +1,14 @@
+# build dir
+cmake-build-debug
+build
+.idea
+
+# bak files
+*~
+
+# run
+run/*
+
 # Prerequisites
 *.d
 

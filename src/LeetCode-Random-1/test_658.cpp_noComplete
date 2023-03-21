@@ -1,0 +1,52 @@
+/**
+-- method:
+
+--result:
+
+ */
+
+#include "combofish_utils.hpp"
+#include <utility>
+
+class Solution {
+
+public:
+  // function start.
+  vector<int> findClosestElements(vector<int> &arr, int k, int x) {
+    vector<int> res(k);
+    int n = arr.size();
+
+    int i;
+    if (x < arr[0]) {
+      i = 0;
+    } else if (x > arr[n - 1]) {
+      i = n - 1;
+    } else {
+      // arr[0] <= x <= arr[n-1]
+      i = 0;
+      while (arr[i] < x) {
+        i++;
+      }
+    }
+
+    IC(i);
+
+    
+    return res;
+  }
+  // function end.
+};
+
+int main() {
+
+  Solution *solution = new Solution();
+
+  // code start
+  vec_t nums = {1, 2, 3, 4, 5};
+  int k = 4;
+  int x = 3;
+
+  IC(nums, k, x);
+  IC(solution->findClosestElements(nums, k, x));
+  return 0;
+}

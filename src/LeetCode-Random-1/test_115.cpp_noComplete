@@ -1,0 +1,24 @@
+/**
+
+ */
+
+#include "combofish_utils.hpp"
+
+
+
+int numDistinct(string s, string t) {
+  int ret = 0;
+
+  return ret;
+}
+
+int main() {
+  // code start
+  string s = "rabbbit";
+  string t = "rabbit";
+
+  IC(s, t);
+
+  IC(numDistinct(s, t));
+  return 0;
+}

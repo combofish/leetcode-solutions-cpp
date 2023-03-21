@@ -1,0 +1,57 @@
+/**
+-- method:
+
+--result:
+
+ */
+
+#include "combofish_utils.hpp"
+
+class Solution {
+public:
+  // function start.
+  int findNthDigit(int n) {
+    int e = 9;
+    int s = 1;
+    int bit = 1;
+
+    while (n > e * bit) {
+      IC(n, e, s, bit);
+
+      n -= e * bit;
+      bit++;
+      e *= 10;
+      s *= 10;
+    }
+
+    IC(n, bit, e, s, n, n + s - 1, n / bit, n % bit);
+
+    string str = std::to_string(s + n / bit - 1);
+
+    IC(str);
+    IC(str[n % bit - 1] - '0');
+    //     return std::to_string(s + n / bit - 1)[n % bit] - '0';
+
+    if (n % bit == 0) {
+      string str = std::to_string(s + n / bit - 2);
+      IC(str);
+      return str.back() - '0';
+    } else {
+      string str = std::to_string(s + n / bit - 1);
+      IC(str);
+      return str[n % bit - 1] - '0';
+    }
+  }
+  // function end.
+};
+
+int main() {
+
+  Solution *solution = new Solution();
+
+  // code start
+  int n = 111;
+  IC(n);
+  IC(solution->findNthDigit(n));
+  return 0;
+}
