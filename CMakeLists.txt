@@ -16,19 +16,14 @@ add_executable(Leetcode_Solution_Cpp
 find_package(fmt)
 target_link_libraries(Leetcode_Solution_Cpp fmt::fmt)
 
-# ===== other ===== #
-#add_executable(test_2 src/test_2.cpp)
+# add_library(name SHARED )
 
 # ===== HOT 100 ===== #
-add_subdirectory(src/HOT-100)
+# add_subdirectory(src/HOT-100)
 
 # add_executable(hot_438_2 src/HOT-100/hot_438_2.cpp)
 # find_package(fmt)
 # target_link_libraries(hot_438_2 fmt::fmt)
 
-#
-# add_library(name SHARED )
 
-add_executable(hot_206 src/HOT-100-2/hot_206.cpp)
-add_executable(hot_206_ii src/HOT-100-2/hot_206_ii.cpp)
-add_executable(hot_206_iii src/HOT-100-2/hot_206_iii.cpp)
+# ===== other ===== #
