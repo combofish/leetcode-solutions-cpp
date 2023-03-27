@@ -5,16 +5,18 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_BUILD_TYPE DEBUG)
 # SET(CMAKE_BUILD_TYPE Release)
 
-set(CMAKE_CXX_FLAGS "-fsanitize=address -fno-omit-frame-pointer -Wall -Werror -Wreturn-type") # -Wextra
+set(CMAKE_CXX_FLAGS "-fsanitize=address -fsanitize=undefined -fno-omit-frame-pointer \
+                    -fno-optimize-sibling-calls -Wall -Werror -Wreturn-type")
+# -Wextra -fsanitize=memory -fsanitize=thread
 
 include_directories(src)
 
-add_executable(Leetcode_Solution_Cpp
-        src/combofish_utils.hpp
-        src/factorial.cpp)
+# add_executable(Leetcode_Solution_Cpp
+#         src/combofish_utils.hpp
+#         src/factorial.cpp)
 
-find_package(fmt)
-target_link_libraries(Leetcode_Solution_Cpp fmt::fmt)
+# find_package(fmt)
+# target_link_libraries(Leetcode_Solution_Cpp fmt::fmt)
 
 # add_library(name SHARED )
 
@@ -27,3 +29,6 @@ target_link_libraries(Leetcode_Solution_Cpp fmt::fmt)
 
 
 # ===== other ===== #
+
+add_executable(hot_200_number-of-islands src/HOT-100-2/hot_200_number-of-islands.cpp)
+add_executable(hot_200_number-of-islands_ii src/HOT-100-2/hot_200_number-of-islands_ii.cpp)
