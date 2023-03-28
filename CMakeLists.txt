@@ -29,6 +29,3 @@ include_directories(src)
 
 
 # ===== other ===== #
-
-add_executable(hot_200_number-of-islands src/HOT-100-2/hot_200_number-of-islands.cpp)
-add_executable(hot_200_number-of-islands_ii src/HOT-100-2/hot_200_number-of-islands_ii.cpp)

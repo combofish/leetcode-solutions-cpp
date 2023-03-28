@@ -31,8 +31,10 @@ int main() {
     };
 
     // 直线去重
-//   unordered_set<std::pair<int,int>> uet = {{0,0}};
-//    unordered_map<std::pair<int,int>,int> ump;
+//   unordered_set<std::pair<int,int>> uet;
+//   unordered_set<string> uets;
+//
+//   unordered_map<std::pair<int,int>,int> ump;
 
     for(auto &item: points){
         int k = (item[3] - item[1]) / (item[2] - item[0]);
