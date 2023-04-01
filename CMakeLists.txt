@@ -29,6 +29,3 @@ include_directories(src)
 
 
 # ===== other ===== #
-
-add_executable(test_01 src/code-exam/test_09/test_01.cpp)
-add_executable(test_02 src/code-exam/test_09/test_02.cpp)
