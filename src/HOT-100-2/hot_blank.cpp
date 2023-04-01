@@ -18,9 +18,7 @@ class Solution {
     // function start.
 public:
 
-
 private:
-
     // function end.
 };
 
@@ -30,9 +28,8 @@ int main() {
 
     // code start
 
+
     // code end
 
     return 0;
 }
-
-
