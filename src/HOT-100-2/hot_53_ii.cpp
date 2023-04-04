@@ -28,24 +28,34 @@ public:
             if (tmp > ans) ans = tmp;
             pre = tmp;
         }
+
+        vvv = 1;
+        IC(vvv);
         return ans;
     }
 
 private:
+    int vvv;
     // function end.
 };
 
 int main() {
 
     auto solution = std::make_shared<Solution>();
+    // auto so = new Solution();
+
 
     // code start
     vector<int> nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
     int ans = 6;
     IC(nums, ans);
+    //    IC(so->maxSubArray(nums));
+
+    Solution a;
+    IC(a.maxSubArray(nums));
 
 
-    IC(solution->maxSubArray(nums));
+    //    IC(solution->maxSubArray(nums));
     // code end
 
     return 0;

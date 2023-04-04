@@ -30,9 +30,5 @@ include_directories(src)
 
 # ===== other ===== #
 
-add_executable(test_01 src/code-exam/test_10/test_01.cpp)
-add_executable(test_03 src/code-exam/test_10/test_03.cpp)
-add_executable(test_04 src/code-exam/test_10/test_04.cpp)
-add_executable(test_05 src/code-exam/test_10/test_05.cpp)
-add_executable(test_06 src/code-exam/test_10/test_06.cpp)
-add_executable(test_05_02 src/code-exam/test_10/test_05_02.cpp)
+add_executable(hot_221_maximal-square src/HOT-100-2/hot_221_maximal-square.cpp)
+add_executable(hot_221_maximal-square_ii src/HOT-100-2/hot_221_maximal-square_ii.cpp)
