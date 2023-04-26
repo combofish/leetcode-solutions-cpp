@@ -30,10 +30,8 @@ include_directories(src)
 
 # ===== other ===== #
 
-add_executable(hot_297_serialize-and-deserialize-binary-tree src/HOT-100-2/hot_297_serialize-and-deserialize-binary-tree.cpp)
-add_executable(hot_72_edit-distance src/HOT-100-2/hot_72_edit-distance.cpp)
-add_executable(hot_399_evaluate-division src/HOT-100-2/hot_399_evaluate-division.cpp)
-add_executable(hot_399_evaluate-division_ii src/HOT-100-2/hot_399_evaluate-division_ii.cpp)
-add_executable(hot_253_meeting-rooms-ii src/HOT-100-2/hot_253_meeting-rooms-ii.cpp)
-add_executable(hot_309_best-time-to-buy-and-sell-stock-with-cooldown src/HOT-100-2/hot_309_best-time-to-buy-and-sell-stock-with-cooldown.cpp)
-add_executable(hot_10_regular-expression-matching src/HOT-100-2/hot_10_regular-expression-matching.cpp)
+add_executable(test_01 src/code-exam/test_11/test_01.cpp)
+add_executable(test_02 src/code-exam/test_11/test_02.cpp)
+add_executable(test_03 src/code-exam/test_11/test_03.cpp)
+add_executable(test_02_ii src/code-exam/test_11/test_02_ii.cpp)
+add_executable(blank src/code-exam/test_11/blank.cpp)
