@@ -28,10 +28,9 @@ include_directories(src)
 # target_link_libraries(hot_438_2 fmt::fmt)
 
 
-# ===== other ===== #
+#include_directories(/usr/include/mysql)
+#add_executable(mysql_test src/h1f2/mysql_test.cpp)
+#target_link_libraries(mysql_test mysqlclient)
+# g++ -o test test.c `mysql_config --cflags --libs`
 
-add_executable(test_01 src/code-exam/test_11/test_01.cpp)
-add_executable(test_02 src/code-exam/test_11/test_02.cpp)
-add_executable(test_03 src/code-exam/test_11/test_03.cpp)
-add_executable(test_02_ii src/code-exam/test_11/test_02_ii.cpp)
-add_executable(blank src/code-exam/test_11/blank.cpp)
+# ===== other ===== #
