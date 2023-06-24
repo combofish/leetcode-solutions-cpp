@@ -17,6 +17,7 @@ class Solution {
     // function start.
 public:
 
+
 private:
     // function end.
 };

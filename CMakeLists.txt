@@ -35,3 +35,8 @@ include_directories(src)
 
 # ===== other ===== #
 
+
+add_executable(sol_71 src/h1f2/sol_71.cpp)
+add_executable(sol_1472 src/h1f2/sol_1472.cpp)
+add_executable(sol_703 src/h1f2/sol_703.cpp)
+add_executable(sol_662 src/h1f2/sol_662.cpp)
