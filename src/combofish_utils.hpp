@@ -192,7 +192,7 @@ ListNode *vecT2ListNode(const vector<int> &nums) {
     ListNode *head = new ListNode(nums.front());
     ListNode *cur = head;
 
-    for (int i = 1; i < nums.size(); ++i) {
+    for (int i = 1; i < (int)nums.size(); ++i) {
         cur->next = new ListNode(nums[i]);
         cur = cur->next;
     }
