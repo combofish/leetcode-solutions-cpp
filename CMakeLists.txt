@@ -2,8 +2,11 @@ cmake_minimum_required(VERSION 3.22)
 project(Leetcode_Solution_Cpp)
 
 set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_BUILD_TYPE DEBUG)
+set(CMAKE_BUILD_TYPE "DEBUG")
+
 # SET(CMAKE_BUILD_TYPE Release)
+
+include_directories("/usr/local/include")
 
 set(CMAKE_CXX_FLAGS "-fsanitize=address -fsanitize=undefined -fno-omit-frame-pointer \
                     -fno-optimize-sibling-calls -Wall -Werror -Wreturn-type")
@@ -36,7 +39,13 @@ include_directories(src)
 # ===== other ===== #
 
 
-add_executable(sol_71 src/h1f2/sol_71.cpp)
-add_executable(sol_1472 src/h1f2/sol_1472.cpp)
-add_executable(sol_703 src/h1f2/sol_703.cpp)
-add_executable(sol_662 src/h1f2/sol_662.cpp)
+#add_executable(sol_71 src/h1f2/sol_71.cpp)
+#add_executable(sol_1472 src/h1f2/sol_1472.cpp)
+#add_executable(sol_703 src/h1f2/sol_703.cpp)
+#add_executable(sol_662 src/h1f2/sol_662.cpp)
+#add_executable(sol_69 src/h1f2/sol_69.cpp)
+add_executable(test_01 src/code-exam-2/test-01/test_01.cpp)
+add_executable(test_02 src/code-exam-2/test-01/test_02.cpp)
+add_executable(test_02_2 src/code-exam-2/test-01/test_02_2.cpp)
+add_executable(test_03 src/code-exam-2/test-01/test_03.cpp)
+add_executable(sol_38 src/h1f2/sol_38.cpp)
