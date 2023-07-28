@@ -34,8 +34,8 @@
 // #include <fmt/printf.h>
 // #include <fmt/format-inl.h>
 // #include <fmt/std.h>
-#include <fmt/core.h>
-#include <fmt/format.h>
+//#include <fmt/core.h>
+//#include <fmt/format.h>
 
 
 #ifndef LEETCODE_SOLUTION_CPP_COMBOFISH_UTILS_H
@@ -192,7 +192,7 @@ ListNode *vecT2ListNode(const vector<int> &nums) {
     ListNode *head = new ListNode(nums.front());
     ListNode *cur = head;
 
-    for (int i = 1; i < nums.size(); ++i) {
+    for (int i = 1; i < (int)nums.size(); ++i) {
         cur->next = new ListNode(nums[i]);
         cur = cur->next;
     }

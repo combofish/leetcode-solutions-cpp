@@ -36,7 +36,7 @@ public:
 
     void visit(string url) {
         IC();
-        if (cur + 1 == rec.size()) {
+        if (cur + 1 == (int)rec.size()) {
             rec.emplace_back(url);
             ++cur;
         } else {
