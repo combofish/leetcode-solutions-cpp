@@ -37,14 +37,5 @@ include_directories(src)
 
 # ===== other ===== #
 
-
-#add_executable(sol_71 src/h1f2/sol_71.cpp)
-#add_executable(sol_1472 src/h1f2/sol_1472.cpp)
-#add_executable(sol_703 src/h1f2/sol_703.cpp)
-#add_executable(sol_662 src/h1f2/sol_662.cpp)
-#add_executable(sol_69 src/h1f2/sol_69.cpp)
-add_executable(test_01 src/code-exam-2/test-01/test_01.cpp)
-add_executable(test_02 src/code-exam-2/test-01/test_02.cpp)
-add_executable(test_02_2 src/code-exam-2/test-01/test_02_2.cpp)
-add_executable(test_03 src/code-exam-2/test-01/test_03.cpp)
-add_executable(sol_38 src/h1f2/sol_38.cpp)
+add_executable(sol_test_01 src/h1f2/sol_test_01.cpp)
+add_executable(sol_test_2_construction src/h1f2/sol_test_2_construction.cpp)
