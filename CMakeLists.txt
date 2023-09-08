@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.22)
 project(Leetcode_Solution_Cpp)
 
 set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_BUILD_TYPE "Debug")
+set(CMAKE_BUILD_TYPE Debug)
 # SET(CMAKE_BUILD_TYPE Release)
 
 include_directories("/usr/local/include")
@@ -36,9 +36,3 @@ include_directories(src)
 # g++ -o test test.c `mysql_config --cflags --libs`
 
 # ===== other ===== #
-
-add_executable(sol_test_01 src/h1f2/sol_test_01.cpp)
-add_executable(sol_test_2_construction src/h1f2/sol_test_2_construction.cpp)
-add_executable(sol_test_3_make_triple src/h1f2/sol_test_3_make_triple.cpp)
-add_executable(sol_test_4_decorator src/h1f2/sol_test_4_decorator.cpp)
-
