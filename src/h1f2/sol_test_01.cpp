@@ -18,7 +18,7 @@ public:
         cout << "Parent constructed." << endl;
     }
 
-    ~Parent() {
+    virtual ~Parent() {
         cout << "Parent deconstructed." << endl;
     }
 };
@@ -66,7 +66,8 @@ int main() {
     cout<<endl<<endl;
 
     Son son;
-    IC(son);
+    
+    // IC(son);
     // Parent constructed.
     // Son constructed.
     // ic| son: {}

@@ -39,3 +39,6 @@ include_directories(src)
 
 add_executable(sol_test_01 src/h1f2/sol_test_01.cpp)
 add_executable(sol_test_2_construction src/h1f2/sol_test_2_construction.cpp)
+add_executable(sol_test_3_make_triple src/h1f2/sol_test_3_make_triple.cpp)
+add_executable(sol_test_4_decorator src/h1f2/sol_test_4_decorator.cpp)
+
