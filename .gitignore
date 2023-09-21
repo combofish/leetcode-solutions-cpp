@@ -5,7 +5,9 @@ cmake-build-release-wsl
 cmake-build-release
 cmake-build-debug
 .idea
-.vscode
+# .vscode
+output
+output-debug
 
 # bak files
 *~
