@@ -1,6 +1,9 @@
 # build dir
-cmake-build-debug
 build
+cmake-build-debug-wsl
+cmake-build-release-wsl
+cmake-build-release
+cmake-build-debug
 .idea
 .vscode
 
