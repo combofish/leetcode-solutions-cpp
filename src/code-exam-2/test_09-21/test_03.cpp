@@ -5,16 +5,20 @@ using namespace std;
 
 class Solution {
 public:
-    void out() {
-        cout << "out func" << endl;
+    // void out() {
+    //     cout << "out func" << endl;
+    // }
+
+    virtual void out(int a) {
+        cout << "virtual out(int) func: " << a << endl;
     }
 
-    virtual void out(int a){
-        cout<< "virtual out func: "<< a <<endl;
+    virtual void out() {
+        cout << "virtual out() func: " << endl;
     }
 
-    Solution(){
-        cout<<"Constructed"<<endl;
+    Solution() {
+        cout << "Constructed" << endl;
 
         out();
 
