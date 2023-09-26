@@ -36,3 +36,6 @@ include_directories(src)
 # g++ -o test test.c `mysql_config --cflags --libs`
 
 # ===== other ===== #
+
+add_executable(test_time src/h1f2/test_time.cpp)
+add_executable(sol_1464 src/h1f2/sol_1464.cpp)
